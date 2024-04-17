@@ -1,11 +1,11 @@
 import prompt from "prompt-sync"
-import calcularImpuestos from "./module/impuestos.js"
+import bmi from "./module/masaCorporal.js"
 let input = prompt();
 let opc = undefined;
 do{
-    let edad = input("Ingrese su edad: ");
-    let ing = input("Ingrese sus ingresos: ");
-    console.log(calcularImpuestos(edad, ing));
+    let peso = input("Ingrese su peso: ");
+    let alt = input("Ingrese sus altura: ");
+    console.log(bmi(peso, alt));
     console.log(`1. Repetir la validacion\n0. Terminar`);
     opc = Number(input())
 }while(opc)
