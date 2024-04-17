@@ -1,25 +1,23 @@
- # 5. Número de Likes
+## 6. FizzBuzz
 
-  
 
-  Escribe una función llamada `likes` que reciba un número y retorne un string utilizando el formato de K para miles y M para millones.
 
-  Por ejemplo:
+Escribir una función llamada `fizzBuzz` que reciba un número y retorne un string de acuerdo a lo siguiente:
 
-  - 1400 se convierte en 1K
-  - 34,567 se convierte en 34K
-  - 7’456,345 se convierte en 7M.
+- "fizz" si el número es múltiplo de 3.
+- "buzz" si el número es múltiplo de 5.
+- "fizzbuzz" si el número es múltiplo tanto de 3 como de 5.
+- Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.
 
-  Si el número es menor a 1000 se debe devolver el mismo número como un string.
+```js
+// escribe tu respuesta acá
 
-  ```js
-  // escribe tu respuesta acá
-  
-  // código de prueba
-  console.log(likes(983)) // "983"
-  console.log(likes(1900)) // "1K"
-  console.log(likes(54000)) // "54K"
-  console.log(likes(120800)) // "120K"
-  console.log(likes(25222444)) // "25M"
-  ```
+// código de prueba
+console.log(fizzBuzz(6)); // "fizz"
+console.log(fizzBuzz(20)); // "buzz"
+console.log(fizzBuzz(30)); // "fizzbuzz"
+console.log(fizzBuzz(8)); // 8
+```
+
+
 
