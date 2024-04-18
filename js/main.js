@@ -1,14 +1,18 @@
-
 import prompt from "prompt-sync";
-import numeroDeCaracteres from "./module/caracteres.js";
+import sumarArreglo from "./module/arreglosuma.js";
 
 let input = prompt();
 let opc = undefined;
 do {
-  let cadena = input("Ingrese una cadena de texto: ");
-  let caracter = input("Ingrese un caracter: ");
-  console.log(`El número de veces que aparece el caracter "${caracter}" en "${cadena}" es: ${numeroDeCaracteres(cadena, caracter)}`);
-  console.log(`Desea ingresar una cadena diferente? 1. Si 0. No`);
+  let numeros = [];
+  console.log("Ingrese los números del arreglo (ingrese 'fin' para terminar):");
+  let numero = input();
+  while (numero !== "fin") {
+    numeros.push(Number(numero));
+    numero = input();
+  }
+  console.log(`La suma de los elementos del arreglo [${numeros}] es: ${sumarArreglo(numeros)}`);
+
+  console.log(`Desea ingresar un arreglo diferente? 1. Si 0. No`);
   opc = Number(input());
 } while (opc);
-
