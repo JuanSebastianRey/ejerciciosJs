@@ -1,5 +1,5 @@
 import prompt from "prompt-sync";
-import sumarArreglo from "./module/arreglosuma.js";
+import multiplicarArreglo from "./module/marray.js";
 
 let input = prompt();
 let opc = undefined;
@@ -11,7 +11,7 @@ do {
     numeros.push(Number(numero));
     numero = input();
   }
-  console.log(`La suma de los elementos del arreglo [${numeros}] es: ${sumarArreglo(numeros)}`);
+  console.log(`La multiplicacion de los elementos del arreglo [${numeros}] es: ${multiplicarArreglo(numeros)}`);
 
   console.log(`Desea ingresar un arreglo diferente? 1. Si 0. No`);
   opc = Number(input());
