@@ -1,18 +1,17 @@
 import prompt from "prompt-sync";
-import multiplicarArreglo from "./module/marray.js";
+import removerCeros from "./module/remove0.js";
 
 let input = prompt();
 let opc = undefined;
 do {
-  let numeros = [];
-  console.log("Ingrese los números del arreglo (ingrese 'fin' para terminar):");
-  let numero = input();
-  while (numero !== "fin") {
-    numeros.push(Number(numero));
-    numero = input();
+  let arr = [];
+  let number = input("Ingrese los numeros del arreglo: ");
+  while (number !== "fin") {
+    arr.push(Number(number));
+    number = input();
   }
-  console.log(`La multiplicacion de los elementos del arreglo [${numeros}] es: ${multiplicarArreglo(numeros)}`);
-
+  const arrSinCeros = removerCeros(arr);
+  console.log(`Arreglo sin ceros: [${arrSinCeros}]`);
   console.log(`Desea ingresar un arreglo diferente? 1. Si 0. No`);
   opc = Number(input());
 } while (opc);

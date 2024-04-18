@@ -1,15 +1,14 @@
-## 12. Multiplicar arreglo
+## 13. Remover ceros
 
 
 
-Escribir una función llamada `multiplicarArreglo` que reciba un arreglo de números y retorne la multiplicación de todos los elementos.
+Escribir una función llamada `removerCeros` que reciba un arreglo de números y retorne un nuevo arreglo excluyendo los ceros (0).
 
 ```js
 // escribe tu respuesta acá
 
 // código de prueba
-console.log(multiplicarArreglo([4, 1, 2, 3])) // 24
-console.log(multiplicarArreglo([1, 2, 3, 4, 5, 6, 7, 8])) // 40320
-console.log(multiplicarArreglo([])) // 1
+console.log(removerCeros([0, 1, 0, 2, 0, 3])) // [1, 2, 3]
+console.log(removerCeros([9, 3, 6, 4])) // [9, 3, 6, 4]
+console.log(removerCeros([0, 0, 0])) // []
 ```
-
