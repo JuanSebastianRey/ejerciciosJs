@@ -1,16 +1,14 @@
-## 8. Sumar rango de números
+## 9. Número de aes (letra "a")
 
 
 
-Escribir una función llamada `sumarRango` que reciba dos argumentos: número inicial y número final. La función debe retornar la suma de los números en ese rango (incluyéndolos).
-
-**Nota:** puedes asumir que el número inicial va a ser menor o igual que el número final.
+Escribir una función llamada `numeroDeAes` que reciba un string y retorne el número de veces que aparece la letra "a":
 
 ```js
 // escribe tu respuesta acá
 
 // código de prueba
-console.log(sumarRango(0, 10)) // 55
-console.log(sumarRango(12, 14)) // 39
-console.log(sumarRango(5, 5)) // 0
+console.log(numeroDeAes("abracadabra")) // 5
+console.log(numeroDeAes("etinol")) // 0
+console.log(numeroDeAes("")) // 0
 ```
