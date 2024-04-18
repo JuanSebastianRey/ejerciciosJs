@@ -1,13 +1,13 @@
 
 import prompt from "prompt-sync";
-import likes from "./module/likes.js";
+import fizzBuzz from "./module/fizzbuzz.js";
 
 let input = prompt();
 let opc = undefined;
 do {
-  let like = input("Ingrese la cantidad de likes: ");
-  console.log(likes(like));
-  console.log("Desea ingresar likes diferentes? 1. Si 0. No");
+  let m = input("Ingrese el numero: ");
+  console.log(fizzBuzz(m));
+  console.log("Desea ingresar un numero diferente? 1. Si 0. No");
   opc= Number(input())
   if (opc == 0){
     break;
