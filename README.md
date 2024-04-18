@@ -1,23 +1,17 @@
-## 6. FizzBuzz
+## 7. Contar rango de números
 
 
 
-Escribir una función llamada `fizzBuzz` que reciba un número y retorne un string de acuerdo a lo siguiente:
+Escribir una función llamada `contarRango` que reciba dos números y retorne cuántos números que hay entre ellos (excluyéndolos):
 
-- "fizz" si el número es múltiplo de 3.
-- "buzz" si el número es múltiplo de 5.
-- "fizzbuzz" si el número es múltiplo tanto de 3 como de 5.
-- Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.
+**Nota:** Utiliza un ciclo en tu solución. Puedes asumir que el primer número va a ser menor que el segundo.
 
 ```js
 // escribe tu respuesta acá
 
 // código de prueba
-console.log(fizzBuzz(6)); // "fizz"
-console.log(fizzBuzz(20)); // "buzz"
-console.log(fizzBuzz(30)); // "fizzbuzz"
-console.log(fizzBuzz(8)); // 8
+console.log(contarRango(1, 9)) // 7
+console.log(contarRango(1332, 8743)) // 7410
+console.log(contarRango(5, 6)) // 0
 ```
-
-
 
